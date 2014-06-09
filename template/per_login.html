@@ -1,0 +1,44 @@
+{% include "per_base.html" %}
+	{% block body %}
+		<div class="container well">
+			<h3>项目管理</h3>
+			<hr class="primary" style="border:1px solid blue">
+			<form class="form-horizontal" name="form" method="post">
+				<div class="control-group">
+				<div id="msg"></div>
+					<label class="col-sm-2 control-label" >用户名：&nbsp;</label>	
+					<div class="col-sm-10">
+						<input id ="login_user" type="text" name="login_user" class="form-control"/>
+					</div>
+				</div>
+				<div class="control-group">
+					<label class="col-sm-2 control-label">密码：&nbsp;</label>
+					<div class="col-sm-10">	
+						
+						<input id ="login_pass" type="password" name="login_pass" class="form-control"/>
+					</div>
+				</div>
+
+				<div class="form-group">
+				    <div class="col-sm-offset-2 col-sm-10">
+				      <div class="checkbox">
+				        <label>
+				          <input type="checkbox" name="checkbox"> Remember me
+				        </label>
+				      </div>
+				    </div>
+			 	</div>
+			  <div class="form-group">
+			    <div class="col-sm-offset-2 col-sm-10">
+			      <input id="user_sub" name="user_sub" type="submit" class="btn btn-primary" value="login" />
+			    </div>
+
+			  </div>
+
+			</form>
+			
+		</div>
+		{% end %}
+</body>
+
+</html>

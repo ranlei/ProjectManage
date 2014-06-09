@@ -1,0 +1,116 @@
+{% include "per_base.html" %}
+
+	<div class="container-fluid">
+		<div class="row">
+
+			<!-- 这是左边导航部分 -->
+			<div class="col-lg-2 well">
+				<div class="my_pro">
+					<h4><b>我的项目</b></button></h4>
+				</div>
+				<hr class="primary fenge" style="border:1px solid blue">
+				<div class="pro_list">
+					<ul class="nav nav-pills nav-stacked pro_ul">
+						<li class="pro_item active"><a href="#">打分系统</a></li>
+						<li class="pro_item"><a href="#">演讲比赛评选</a></li>
+						<li class="pro_item"><a href="#">我们是傻逼</a></li>
+					</ul>
+
+				</div>
+				<button class="btn btn-default navbar-btn" data-toggle="modal" data-target="#newPro-modal"><a href=""><b>+</b></a></button>
+			</div>
+
+
+			<!-- 这是右边数据部分 -->
+			<div class="col-lg-10 well">
+				<div class="row">
+					<nav class="navbar navbar-default navbar-static-top " role="navigation">
+					  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					  	<ul class="nav navbar-nav">
+					  		 <li><a href="#"><span class="glyphicon glyphicon-user"></span>&nbsp;rale</a></li>
+					  	</ul>
+					    <ul class="nav navbar-nav  navbar-right">
+					      <li><a href="#"><span class="glyphicon glyphicon-envelope"></span></a></li>
+					     <li><a href="#"><span class="glyphicon glyphicon-fast-backward"></span></a></li>
+					      <li><a href="#"><span class="glyphicon glyphicon-bullhorn"></span></li>
+					    </ul>
+					  </div>
+					</nav>
+					<hr class="primary" style="border:1px solid blue">
+				</div>
+				<div class="row">
+					<div class="col-lg-1" id="list_mod">
+						<ul class="nav nav-pills nav-stacked">
+							<li class="active-board">
+								<a href="#"><span class="glyphicon glyphicon-signal"></span></a>
+							</li>
+							<li class="task-board">
+								<a href="#"><span class="glyphicon glyphicon-th-list"></span></a>
+							</li>
+							<li class="doc-board">
+								<a href="#"><span class="glyphicon glyphicon-folder-open"></span></a>
+							</li>
+							<li class="schedule-board">
+								<a href="#"><span class="glyphicon glyphicon-calendar"></span></a>
+							</li>
+							<li class="set-board">
+								<a href="#"><span class="glyphicon glyphicon-wrench"></span></a>
+							</li>
+						</ul>
+					</div>
+
+					<!-- 所有动态墙部分 -->
+					<div class="col-lg-11"	>
+						<div class="jumbotron">
+						  <p><b>冉sb完成了地一个任务</b></p>
+						  <p>...</p>
+						  <p><a class="btn btn-primary btn-sm" role="button">Learn more</a></p>
+						</div>
+
+						<div class="jumbotron">
+						  <p><b>冉sb分享了一个文件</b></p>
+						  <p>...</p>
+						  <p><a class="btn btn-primary btn-sm" role="button">Learn more</a></p>
+						</div>
+						<div class="jumbotron">
+						  <p><b>冉sb写了新的任务：开始做啥</b></p>
+						  <p>...</p>
+						  <p><a class="btn btn-primary btn-sm" role="button">Learn more</a></p>
+						</div>
+
+
+					</div>
+				</div>
+			</div>
+
+
+
+		</div>
+
+	</div>
+<!--newPro Modal start-->
+<div class="modal fade" id="newPro-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">新建一个项目</h4>
+      </div>
+      <div class="modal-body">
+      	<label for="proName-input">项目名称:</label>
+      	<input id="proName-input" class="proName-input form-control" type="text" />
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!--newPro Modal end-->
+
+</body>
+	<script type="text/javascript" src="static/bower_components/jquery/jquery.js"></script>
+	<script type="text/javascript" src="static/bower_components/bootstrap/dist/js/bootstrap.js"></script>
+	<script type="text/javascript" src="static/pro_js/main.js"></script>
+</html>

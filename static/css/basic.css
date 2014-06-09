@@ -1,0 +1,47 @@
+#login_user{
+	max-width: 300px;
+	margin-top: 5px;
+
+}
+#login_pass{
+	max-width: 300px;
+	margin-top: 5px;
+
+}
+#title_info{
+	max-width: 150px;
+}
+#text_title{
+	width: 100%;
+}
+.form-control{
+	max-width: 400px;
+}
+.role_desc{
+	height: 150px;
+	width:400px; 
+
+}
+
+#add_role_sub{
+	margin-top: 100px;
+	margin-left: 400px;
+
+}
+#role_power{
+	margin-top: 10px;
+}
+#thead_header{
+	font-weight: 200px;
+	font-size: 18px;
+}
+.desc{
+	max-width: 400px;
+}
+.modal-body h5{
+	width:300px;
+}
+.modal-body h5 p{
+	float: right;
+
+}

@@ -1,0 +1,42 @@
+{% include "per_base.html" %}
+	<div class="container well">
+		{% include "per_nav.html" %}
+			<form class="form-horizontal" name="form" method="post">
+						
+						<div class="control-group">
+							<label class="col-sm-2 control-label">角色名称：&nbsp;</label>
+							<div class="col-sm-10">	
+								<input id ="role_name" type="text" name="role_name" class="form-control"/>
+							</div>
+						</div>
+						<br><br><br>
+						<div class="control-group">
+							<label class="col-sm-2 control-label" name="role_textarea">角色描述：&nbsp;</label>
+							<div class="col-sm-10">	
+							<textarea class="role_desc" name="role_textarea"></textarea>
+							</div>
+						</div>
+						<br><br><br>
+						<div class="control-group">
+							<label class="col-sm-2 control-label">角色类型：&nbsp;</label>
+							<div class="col-sm-3">	
+								<select id="role_power" class="form-control" name="role_power">
+									{% for entry in entries %}
+										<option value="{{ entry.power }}" name="role_power">{{ entry.role_name }}</option>
+									{% end %}
+								</select>
+							</div>
+						</div>
+						<br><br><br>
+
+					  <div  id="add_role_sub" class="control-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <input id="role_sub" name="role_sub" type="submit" class="btn btn-primary" value="提交" />
+					    </div>
+					  </div>
+
+			</form>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,76 @@
+{% include "per_base.html" %}
+	<div class="container well">
+		{% include "per_nav.html" %}
+			<form class="form-horizontal" name="form" method="post">
+						<br><br><br>
+						<div class="control-group">
+							<label class="col-sm-2 control-label">职员名字：&nbsp;</label>
+							<div class="col-sm-10">	
+								<input id ="role_name" type="text" name="emp_name" class="form-control"/>
+							</div>
+						</div>
+						<br><br><br>
+						<div class="control-group">
+							<label class="col-sm-2 control-label">职员密码：&nbsp;</label>
+							<div class="col-sm-10">	
+								<input id ="role_name" type="password" name="emp_pass" class="form-control"/>
+							</div>
+						</div>
+						<br><br><br>
+						<div class="control-group">
+							<label class="col-sm-2 control-label">tel：&nbsp;</label>
+							<div class="col-sm-10">	
+								<input id ="role_name" type="text" name="emp_tel" class="form-control"/>
+							</div>
+						</div>
+						<br><br><br>
+						<div class="control-group">
+							<label class="col-sm-2 control-label">职员地址：&nbsp;</label>
+							<div class="col-sm-10">	
+								<input id ="role_name" type="text" name="emp_addr" class="form-control"/>
+							</div>
+						</div>
+						<br><br><br>
+						<div class="control-group">
+							<label class="col-sm-2 control-label">email：&nbsp;</label>
+							<div class="col-sm-10">	
+								<input id ="role_name" type="text" name="emp_email" class="form-control"/>
+							</div>
+						</div>
+						<br><br><br>
+						<div class="control-group">
+							<label class="col-sm-2 control-label">性别：&nbsp;</label>
+							<div class="col-sm-1">	
+								<select class="form-control" name="emp_sex">
+									<option value="1" name="emp_sex">男</option>
+									<option value="0" name="emp_sex">女</option>
+									
+								</select>
+							</div>
+						</div>
+						<br><br><br>
+						<div class="control-group">
+							<label class="col-sm-2 control-label">职员职位：&nbsp;</label>
+							<div class="col-sm-3">	
+								<select id="role_power" class="form-control" name="emp_power">
+									{% for entry in entries %}
+										<option value="{{ entry.roleNo }}" name="emp_power">{{ entry.role_name }}</option>
+									{% end %}
+								</select>
+							</div>
+						</div>
+						
+
+						
+
+					  <div  id="add_role_sub" class="control-group">
+					    <div class="col-sm-offset-2 col-sm-10">
+					      <input id="role_sub" name="role_sub" type="submit" class="btn btn-primary" value="提交" />
+					    </div>
+					  </div>
+
+			</form>
+
+	</div>
+</body>
+</html>

@@ -1,0 +1,33 @@
+.container-fluid{
+	
+}
+.row{
+	width: 100%;
+}
+.my_pro{
+	margin-top: -5px;
+}
+.fenge{
+	margin-top: 46px;
+}
+
+.col-lg-2{
+	min-height: 650px;
+	width: 15%;
+}
+
+.col-lg-2 button{
+	width: 100px;
+	margin-left:10px;
+}
+
+.col-lg-10{
+	width: 85%;
+}
+#list_mod ul{
+	margin-top: -20px;
+	margin-left: -10px;
+}
+.jumbotron{
+	height: 180px;
+}
